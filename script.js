@@ -8,7 +8,7 @@
   const dropdown = document.getElementById('posts');
 
   example.addEventListener("click", function() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://restcountries.com/')
       .then(response => response.json())
       .then(array => {
         console.log(array)
@@ -20,7 +20,7 @@
     answer.innerHTML = "Loading..."
 
     setTimeout(function() {
-      fetch('https://jsonplaceholder.typicode.com/posts')
+      fetch('https://restcountries.com/')
         .then(response => response.json())
         .then(array => {
           console.log(array)
@@ -67,7 +67,7 @@
             
             postResult.innerHTML = "Sending...";
             
-            fetch('https://jsonplaceholder.typicode.com/posts', {
+            fetch('https://restcountries.com/', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
