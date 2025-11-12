@@ -1,20 +1,8 @@
 (function() {
-    const example = document.getElementById('example');
+   
     const answer = document.getElementById('answer');
     const form = document.querySelector('form');
     const dropdown = document.getElementById('posts');
-    example.addEventListener("click", function() {
-        fetch('https://restcountries.com/v3.1/all?fields=name,capital')
-            .then(response => response.json())
-            .then(array => {
-                console.log(array);
-                answer.innerHTML = `Pobrano dane dla ${array.length} krajów. Sprawdź konsolę!`;
-            })
-            .catch(error => {
-                console.error("Błąd fetch example:", error);
-                answer.innerHTML = `<p style="color: red;">Nie udało się pobrać danych początkowych.</p>`;
-            });
-    });
     form.addEventListener('submit', function(event) {
         event.preventDefault(); 
 
