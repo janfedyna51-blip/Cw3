@@ -9,7 +9,7 @@
   <body>
     <h2>Com3_1.1</h2>
     <form action="/submit" method="post">
-      <label for="posts">Wybierz post:</label>
+      <label for="posts">Wybierz kraj:</label>
       <select id="posts" name="car">
         <option value="Warsaw">Warsaw</option>
         <option value="London">London</option>
@@ -23,8 +23,21 @@
       <button type="submit">Wyświetl</button>
     </form>
     <div id="answer"></div>
-     <h2>Com3_2.1</h2>
+    <h2>Com3_2.1</h2>
     <div id="answer2"></div>
     <script src="script.js"></script>
+    <h2>Com3_2.2</h2>
+    <form action="/submit" method="post">
+      <label for="posts">Wybierz endpoint:</label>
+      <select id="posts" name="car">
+        <option value="dataset">dataset</option>
+        <option value="datacategories">datacategories</option>
+        <option value="datatypes">datatypes</option>
+        <option value="locationcategories">locationcategories</option>
+        <option value="locations">locations</option>
+        <option value="data">data</option>
+      </select>
+      <button type="submit">Wyświetl</button>
+    </form>
   </body>
 </html>
